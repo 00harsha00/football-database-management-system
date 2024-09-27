@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    .container {
+      position: relative;
+      text-align: center;
+      color: rgb(9, 84, 134);
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 36px; /* Adjust the font size as needed */
+      text-shadow: 2px 2px 4px rgba(7, 6, 6, 0.5); /* Add text shadow */
+      background-color: rgba(255, 251, 251, 0.8); /* Add background color */
+      padding: 10px 10px; /* Add padding to increase visibility */
+      border-radius: 10px; /* Add border radius for rounded corners */
+      font-family: monospace;
+    }
+
+    .container img {
+      width: 100vw; /* Full viewport width */
+      height: 100vh; /* Full viewport height */
+      object-fit: cover; /* Ensures the image covers the entire area without distortion */
+      min-width: 100%; /* Ensures image stretches to cover wider screens */
+      min-height: 100%; /* Ensures image stretches to cover taller screens */
+      opacity: 0.65;
+    }
+  </style>
+</head>
+<body>
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="flex items-center justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="h-8 w-auto" src="nbk.png" alt="NBK">
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <a href="http://localhost:3000/players" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" target="_blank">Players</a>
+              <a href="http://localhost:3000/clubs" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" target="_blank">Clubs</a>
+              <a href="http://localhost:3000/games" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" target="_blank">Games</a>
+              <a href="http://localhost:3000/competitions" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" target="_blank" >Competitions</a>
+              <a href="mainQuery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" target="_blank">MainQueries</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <img src="topImage.jpg" alt="Football">
+    <div class="centered">Welcome to Football DB!!</div>
+  </div>
+  
+  <div id="players-data"></div>
+</body>
+</html>
