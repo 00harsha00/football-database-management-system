@@ -53,11 +53,11 @@ npm install
   ii. Use the provided 'create.sql' script to create the necessary tables:
   iii.  Open PostgreSQL Query Tool, load 'create.sql', and run the queries.
 
-# Load data into the tables using the 'load.sql' script.
-# Example: COPY public.tablename FROM '/path/to/csvfile.csv' WITH CSV HEADER;
+#Load data into the tables using the 'load.sql' script.
+#Example: COPY public.tablename FROM '/path/to/csvfile.csv' WITH CSV HEADER;
 
 5. Start the backend server
 node webapp.js
 
 6. Access the frontend by opening 'index.html' in your web browser
-# Ensure the backend server is running at http://localhost:3000
+#Ensure the backend server is running at http://localhost:3000
